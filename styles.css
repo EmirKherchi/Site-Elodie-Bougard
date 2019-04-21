@@ -1,0 +1,132 @@
+/*general*/
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: #fefdfb;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 14px !important;
+  color: #7a7670 !important;
+}
+
+/*navbar*/
+#logo {
+  max-width: 50%;
+  margin-left: 50px;
+}
+
+.navbar-brand {
+  width: 100px;
+  margin-right: 350px;
+}
+
+.navbar-brand ul {
+  display: inline-block;
+  padding-right: 350px;
+}
+
+.navbar-brand ul li {
+  font-size: 10px;
+  font-weight: bold;
+  padding-top: 10px;
+}
+
+.navbar {
+  background-color: #fdf9f0 !important;
+  z-index: 1;
+}
+
+.navbar .navbar-nav {
+  float: none;
+}
+
+.navbar .navbar-collapse {
+  text-align: center;
+}
+
+.navbar ul li {
+  padding: 0px 5px;
+  display: block;
+  margin: auto;
+}
+
+.navbar ul li a {
+  color: #7a7670 !important;
+  font-weight: 500;
+  transition: 0.3s ease-out;
+}
+
+.navbar ul li a:hover {
+  color: #fdf9f0 !important;
+  background-color: #bc755a;
+  border-radius: 4px;
+  font-weight: 600;
+}
+
+/*dropdown*/
+.dropdown-menu {
+  background-color: #bc755a;
+  color: #fdf9f0 !important;
+  font-size: 14px;
+}
+
+.navbar-toggler {
+  border-color: #bc755a !important;
+  display: block;
+  margin: auto;
+}
+
+.dropdown-item {
+  padding: 15px 30px;
+}
+
+.navbar .dropdown-menu a {
+  color: #fdf9f0 !important;
+}
+
+.navbar .dropdown-menu a:hover {
+  background-color: #a5694f !important;
+  color: #fdf9f0 !important;
+}
+
+.dropdown:hover>.dropdown-menu {
+  display: block;
+}
+
+.dropdown>.dropdown-toggle:active {
+  pointer-events: none;
+}
+/*Fleur*/
+
+#banner{
+  background-image: url("Images/fleur.png");
+  height: 50%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  top: -100px;
+  z-index: 0;
+
+
+}
+
+
+.btn-info {
+  padding: 10px 30px;
+  color: #fdf9f0 !important;
+  background-color: #bc755a !important;
+  border: none;
+  margin-top: 175px;
+  font-size: 15px;
+  font-weight: 600;
+  -webkit-box-shadow: 0px 14px 12px -13px rgba(74,73,74,0.85);
+  -moz-box-shadow: 0px 14px 12px -13px rgba(74,73,74,0.85);
+  box-shadow: 0px 14px 12px -13px rgba(74,73,74,0.85);
+  }
+
+.btn-info:hover {
+  background-color: #a5694f !important;
+
+}
