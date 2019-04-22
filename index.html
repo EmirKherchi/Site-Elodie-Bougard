@@ -59,15 +59,44 @@
 
     <div id="banner">
       <div class="buttonContact text-center">
-        <a href="#" class="btn btn-info">Contact</a>
+        <a href="#" class="btn btn-info" data-toggle="modal" data-target="#Modal">Contact</a>
       </div>
     </div>
+    <!--Le modal de contact, manque le php-->
+    <div class="modal fade" id="Modal" tabindex="-1" role="dialog" aria-labelledby="ModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="ModalLabel">Contactez-moi</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <form>
+          <div class="form-group">
+            <label for="recipient-name" class="col-form-label">Votre e-mail</label>
+            <input type="text" class="form-control" id="recipient-name">
+          </div>
+          <div class="form-group">
+            <label for="message-text" class="col-form-label">Message:</label>
+            <textarea class="form-control" id="message-text"></textarea>
+          </div>
+        </form>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Fermer</button>
+        <button type="button" class="btn btn-primary">Envoyez</button>
+      </div>
+    </div>
+  </div>
+</div>
 
    <div id="presentationHome" class="container text-justify">
      <div class="row">
        <div id="block1" class="col-sm-12 col-md-8 col-lg-8 col-lg-8">
          <p>
-           <h4>Rapide texte de présentation</h4>
+           <h5>Rapide texte de présentation</h5>
            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec tempus nunc eros,<br /> quis molestie ipsum tristique in.
            Aliquam consequat interdum vehicula. Praesent<br /> luctus dolor lectus, sagittis feugiat tortor vulputate vitae.
            Aenean varius luctus<br /> commodo.<br />
@@ -90,6 +119,44 @@
      </div>
 
    </div>
+
+   <footer>
+     <nav class="navbar navbar-expand-lg navbar-light bg-light">
+       <a class="navbar-brand" href="#"><img class="img-fluid" id="logo" src="Images\logoNB.png" alt="logo">
+     </a>
+
+
+       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+         <span class="navbar-toggler-icon"></span>
+       </button>
+       <div class="collapse navbar-collapse" id="navbarSupportedContent">
+         <ul class="navbar-nav">
+           <li class="nav-item">
+             <a class="nav-link" href="#">Accueil</a>
+           </li>
+           <li class="nav-item">
+             <a class="nav-link" href="#">Qui Suis-je</a>
+           </li>
+           <li class="nav-item">
+             <a class="nav-link" href="#">Les Psys</a>
+           </li>
+           <li class="nav-item dropup">
+             <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown">
+               Les Scéances
+             </a>
+             <div class="dropdown-menu text-center">
+               <a class="dropdown-item" href="#">Individuelles</a>
+               <a class="dropdown-item" href="#">Couples</a>
+               <a class="dropdown-item" href="#">Thérapies<br/>Familiales</a>
+             </div>
+           </li>
+           <li class="nav-item">
+             <a class="nav-link" href="#">Contact</a>
+           </li>
+         </ul>
+       </div>
+     </nav>
+   </footer>
 
   </body>
   </html>
